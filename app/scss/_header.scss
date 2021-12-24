@@ -12,6 +12,10 @@
     display: flex;
     align-items: center;
 
+    @include breakpoint-down(small) {
+      display: none;
+    }
+
     li {
       margin: 0px 15px;
       font-weight: bold;
@@ -39,6 +43,11 @@
 .navbar-brand img {
   width: 50px;
   height: 50px;
+
+  @include breakpoint-down(small) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .navbar-nav-left {
@@ -61,3 +70,58 @@
   display: flex;
   align-items: center;
 }
+
+// Hamburger Menu Icon
+.hamburger {
+  display: none;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  background: none;
+  border: none;
+  z-index: 10;
+  transition: all 0.25s;
+
+  @include breakpoint-down(small) {
+    display: block;
+  }
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: #000;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+.open .hamburger-middle {
+  display: none;
+}
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+// .navbar .navbar-nav-left,
+// .navbar .navbar-nav-left {
+//   @include breakpoint-down(small) {
+//     display: none;
+//   }
+// }

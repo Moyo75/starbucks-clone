@@ -42,8 +42,70 @@
   gap: 2rem;
   align-items: center;
   justify-content: space-between;
+
+  @include breakpoint-down(small) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .grid-reversed :first-child {
   order: 2;
+
+  @include breakpoint-down(small) {
+    order: 0;
+  }
+}
+
+// Mobile Menu
+.mobile-menu {
+  position: fixed;
+  top: 85px;
+  right: 0px;
+  color: #000;
+  background-color: #fff;
+  width: 90%;
+  height: 100%;
+  padding: 30px;
+  box-shadow: inset 0 4px 3px -3px rgba(0, 0, 0, 0.1),
+    inset 0 4px 2px -2px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s;
+}
+
+.mobile-menu img {
+  width: 20px;
+  height: 20px;
+}
+
+.mobile-menu ul {
+  line-height: 3;
+  border-bottom: 1px solid #777;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.mobile-menu a:hover {
+  color: $primaryColour;
+}
+
+.mobile-menu div {
+  margin-top: 20px;
+}
+
+.mobile-menu div a {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.hidden {
+  transform: translateX(100%);
+}
+
+.no-scroll {
+  overflow: hidden;
 }
