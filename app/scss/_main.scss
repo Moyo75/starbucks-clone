@@ -1,0 +1,49 @@
+.box {
+  margin-bottom: 30px;
+  @include breakpoint-up(large) {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.box-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.box-text {
+  max-width: 500px;
+  text-align: center;
+  justify-self: center;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.box-text .btn {
+  margin-top: 20px;
+}
+
+.box-f .box-text {
+  max-width: 600px;
+}
+
+.divider {
+  width: 95%;
+  height: 1px;
+  background: #ccc;
+  margin: 40px auto;
+}
+
+// Grid Styles
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid-reversed :first-child {
+  order: 2;
+}

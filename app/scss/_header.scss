@@ -43,10 +43,21 @@
 
 .navbar-nav-left {
   text-transform: uppercase;
+  flex: 1;
+  margin-left: 20px;
 }
 
 .navbar-nav-right img {
   height: 20px;
   width: 20px;
   margin-right: 10px;
+}
+
+.navbar-nav-right li:nth-child(2) {
+  margin: 0 5px;
+}
+
+.navbar-nav-right li:first-child a {
+  display: flex;
+  align-items: center;
 }

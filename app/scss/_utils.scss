@@ -1,0 +1,72 @@
+// Backgrounds
+
+.bg-primary {
+  background-color: $primaryColour;
+  color: #fff;
+}
+
+.bg-secondary {
+  background-color: $secondaryColour;
+  color: #fff;
+}
+.bg-extra {
+  background-color: $extraColour;
+  color: #000;
+}
+.bg-dark {
+  background-color: $darkColour;
+  color: #000;
+}
+
+// Text Styling
+.text-center {
+  text-align: center;
+}
+
+.text-xl {
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 600;
+  margin-bottom: 20px;
+
+  @include breakpoint-down(medium) {
+    font-size: 30px;
+  }
+}
+
+.text-lg {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  @include breakpoint-down(medium) {
+    font-size: 25px;
+  }
+}
+
+.text-md {
+  font-size: 24px;
+  margin-bottom: 20px;
+
+  @include breakpoint-down(medium) {
+    font-size: 19px;
+  }
+}
+
+.text-sm {
+  font-size: 18px;
+}
+
+// Padding
+.py-sm {
+  padding: 10px 0;
+}
+
+.py-md {
+  padding: 20px 0;
+}
+
+.py-lg {
+  padding: 40px 0;
+}
