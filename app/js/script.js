@@ -7,4 +7,13 @@ function navToggle() {
   document.body.classList.toggle("no-scroll");
 }
 
+function removeClass() {
+  if (window.innerWidth >= 795) {
+    btn.classList.remove("open");
+    nav.classList.toggle("hidden");
+    document.body.classList.remove("no-scroll");
+  }
+}
+
 btn.addEventListener("click", navToggle);
+window.onresize = removeClass;

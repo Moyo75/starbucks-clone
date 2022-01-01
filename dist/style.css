@@ -94,7 +94,7 @@
           align-items: center;
 }
 
-@media (max-width: 47.9375em) {
+@media (max-width: 49.625em) {
   .navbar ul {
     display: none;
   }
@@ -133,7 +133,7 @@
   height: 50px;
 }
 
-@media (max-width: 47.9375em) {
+@media (max-width: 49.625em) {
   .navbar-brand img {
     width: 40px;
     height: 40px;
@@ -180,7 +180,7 @@
   transition: all 0.25s;
 }
 
-@media (max-width: 47.9375em) {
+@media (max-width: 49.625em) {
   .hamburger {
     display: block;
   }
@@ -270,7 +270,7 @@ img {
   padding: 0 30px 30px;
 }
 
-@media (max-width: 47.9375em) {
+@media (max-width: 49.625em) {
   .footer-container {
     text-align: center;
   }
@@ -351,7 +351,7 @@ img {
           justify-content: space-between;
 }
 
-@media (max-width: 47.9375em) {
+@media (max-width: 49.625em) {
   .grid-col-2 {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -364,7 +364,7 @@ img {
           order: 2;
 }
 
-@media (max-width: 47.9375em) {
+@media (max-width: 49.625em) {
   .grid-reversed :first-child {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
@@ -378,7 +378,7 @@ img {
   right: 0px;
   color: #000;
   background-color: #fff;
-  width: 90%;
+  width: 80%;
   height: 100%;
   padding: 30px;
   -webkit-box-shadow: inset 0 4px 3px -3px rgba(0, 0, 0, 0.1), inset 0 4px 2px -2px rgba(0, 0, 0, 0.07);

@@ -2,18 +2,18 @@
 // - Mobile: 375px
 // - Desktop: 960px
 
-// 375px, 768px, 960px, 1440px
+// 375px, 795px, 960px, 1440px
 $breakpoints-up: (
   "xsmall": "23.4375em",
-  "small": "48em",
+  "small": "49.6875em",
   "medium": "60em",
   "large": "90em",
 );
 
-// 374px, 767px, 959px, 1439px
+// 374px, 794px, 959px, 1439px
 $breakpoints-down: (
   "xsmall": "23.375em",
-  "small": "47.9375em",
+  "small": "49.625em",
   "medium": "59.9375em",
   "large": "89.9375em",
 );

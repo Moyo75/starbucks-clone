@@ -63,7 +63,7 @@
   right: 0px;
   color: #000;
   background-color: #fff;
-  width: 90%;
+  width: 80%;
   height: 100%;
   padding: 30px;
   box-shadow: inset 0 4px 3px -3px rgba(0, 0, 0, 0.1),
@@ -105,6 +105,10 @@
 .hidden {
   transform: translateX(100%);
 }
+
+// .hide-mobile-menu {
+//   transition: translateX(-100%);
+// }
 
 .no-scroll {
   overflow: hidden;
